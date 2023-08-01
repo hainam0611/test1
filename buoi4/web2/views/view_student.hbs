@@ -1,0 +1,48 @@
+<div class="container col-md-6">
+<h1 class="text tex-primary text-center">List student</h1>
+<table class="table table-danger">
+    <tr>
+        <th>Name</th>
+        <td>
+            {{student.name}}
+        </td>
+    </tr>
+    <tr>
+        <th>DoB</th>
+        <td> 
+            {{ dateFormat student.doB "DD/MM/YY"}}
+        </td>
+    </tr>
+    <tr>
+        <th>Email</th>
+        <td>
+            {{student.email}}
+        </td>
+    </tr>
+    <tr>
+        <th>Gender</th>
+        <td>
+            {{student.gender}}
+        </td>
+    </tr>
+    <tr>
+        <th>Student year</th>
+        <td>
+            {{student.year}}
+        </td>
+    </tr>
+    <tr>
+        <th>Major</th>
+        <td>
+           {{student.major}}
+        </td>
+    </tr>
+    <tr>
+        <th>Image</th>
+        <td>
+            <img src="{{student.image}}" width="150" height="200" alt="">
+        </td>
+    </tr>
+    
+</table>
+</div>
